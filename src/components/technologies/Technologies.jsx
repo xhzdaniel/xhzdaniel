@@ -14,7 +14,7 @@ export default function Technologies() {
   return (
     <>
       <div style={{ textAlign: "center" }}>
-        <h2>Tecnologies</h2>
+        <h2>Technologies</h2>
         <p>I have worked with these technologies and I am always learning.</p>
       </div>
       <div className="technologies-marquee gradient-mask">
