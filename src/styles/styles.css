@@ -100,15 +100,19 @@
 }
 
 .container-info .social-links .social-links-list button {
-  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
   text-decoration: none;
   color: inherit;
   border: none;
   cursor: pointer;
   background-color: #333;
-  padding: 0.37rem 1rem 0.1rem 1rem;
+  padding: 0.4rem 0.5rem;
   border-radius: 1rem;
   transition: background-color 0.5s ease;
+  text-align: center;
   &:hover {
     background-color: grey;
   }
@@ -168,6 +172,7 @@
 .container-projects .project {
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
   min-width: 16rem;
   max-width: 20rem;
   width: 100%;
@@ -202,14 +207,13 @@
 }
 
 .container-projects .project .project-header .header-info h3 {
-  color: white;
   margin: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   width: max-content;
   padding: 0rem 0.5rem;
-  border-radius: 5px;
+  border-radius: 1rem;
   background-color: rgba(0, 0, 0, 0.5);
   font-weight: 600;
 }
@@ -221,7 +225,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   width: 100%;
-  margin-left: 8px;
+  padding: 0 0.5rem;
 }
 
 .container-projects .project .project-header img {
@@ -250,14 +254,16 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  gap: 0.6rem;
+  gap: 0.3rem;
 }
 
 .container-projects .project .project-footer .project-sources .source {
-  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   background-color: #333;
-  padding: 0.2rem 0.5rem 0rem 0.5rem;
+  padding: 0.4rem 0.5rem;
   border-radius: 1rem;
   transition: background-color 0.5s ease;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -267,11 +273,15 @@
   }
 }
 
+.container-projects .project .project-footer .project-sources .source .soon {
+  padding: 0.4rem 0.5rem 0.1rem;
+}
+
 .container-projects .project .project-footer .visit-button {
   font-size: 1.2rem;
   cursor: pointer;
   background-color: #333;
-  padding: 0.4rem 0.5rem 0.1rem 0.5rem;
+  padding: 0.4rem 0.5rem 0.1rem;
   font-weight: 600;
   border-radius: 1rem;
   transition: background-color 0.5s ease;

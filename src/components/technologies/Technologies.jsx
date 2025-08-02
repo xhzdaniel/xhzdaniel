@@ -4,10 +4,11 @@ export default function Technologies() {
     "CSS3",
     "JavaScript",
     "React",
-    "Node",
-    "Express",
+    "NodeJS",
+    "ExpressJS",
     "MongoDB",
-    "Lua",
+    "MySQL",
+    "Lua54",
   ];
 
   return (

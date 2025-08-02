@@ -25,7 +25,6 @@ export default function Projects() {
     },
     {
       title: "Coming Soon",
-      image: "https://via.placeholder.com/150",
       description: "Stay tuned for more projects!",
       sources: [],
     },
@@ -54,7 +53,9 @@ export default function Projects() {
           ProjectsList.map((project, index) => (
             <div className="project" key={index}>
               <div className="project-header">
-                <img src={project.image} alt={project.title} />
+                {project.image && (
+                  <img src={project.image} alt={project.title} />
+                )}
                 <div className="header-info">
                   <h3>{project.title}</h3>
                   <p>{project.description}</p>
@@ -78,7 +79,7 @@ export default function Projects() {
                     </>
                   ) : (
                     <span
-                      className="source"
+                      className="source soon"
                       style={{ padding: "0.15rem 0.5rem", fontSize: "1.1rem" }}
                       data-tooltip-id="tooltip"
                       data-tooltip-content="Coming Soon"
