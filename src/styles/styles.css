@@ -273,8 +273,20 @@
   }
 }
 
-.container-projects .project .project-footer .project-sources .source .soon {
-  padding: 0.4rem 0.5rem 0.1rem;
+.container-projects .project .project-footer .private {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #333;
+  padding: 0.4rem 0.5rem;
+  border-radius: 1rem;
+  transition: background-color 0.5s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: white;
+  &:hover {
+    background-color: grey;
+  }
 }
 
 .container-projects .project .project-footer .visit-button {
@@ -282,7 +294,6 @@
   cursor: pointer;
   background-color: #333;
   padding: 0.4rem 0.5rem 0.1rem;
-  font-weight: 600;
   border-radius: 1rem;
   transition: background-color 0.5s ease;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);

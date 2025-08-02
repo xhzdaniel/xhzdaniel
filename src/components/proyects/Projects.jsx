@@ -22,11 +22,13 @@ export default function Projects() {
       image: ReactToVideo,
       description: "Streamer React To Video with options",
       sources: ["React", "NodeJs"],
+      private: true,
     },
     {
-      title: "Coming Soon",
+      title: "Developing...",
       description: "Stay tuned for more projects!",
       sources: [],
+      private: true,
     },
   ];
 
@@ -80,15 +82,15 @@ export default function Projects() {
                   ) : (
                     <span
                       className="source soon"
-                      style={{ padding: "0.15rem 0.5rem", fontSize: "1.1rem" }}
+                      style={{ padding: "0.15rem 0.5rem" }}
                       data-tooltip-id="tooltip"
-                      data-tooltip-content="Coming Soon"
+                      data-tooltip-content="In development"
                     >
                       Cooming Soon
                     </span>
                   )}
                 </div>
-                {project.link && (
+                {(project.link && (
                   <button
                     className="visit-button"
                     onClick={() => window.open(project.link, "_blank")}
@@ -97,7 +99,20 @@ export default function Projects() {
                   >
                     <FaArrowAltCircleRight />
                   </button>
-                )}
+                )) ||
+                  (project.private && (
+                    <span
+                      className="private"
+                      data-tooltip-id="tooltip"
+                      data-tooltip-content="Visit not available"
+                      disabled
+                      style={{
+                        padding: "0.2rem 0.5rem",
+                      }}
+                    >
+                      Code is private
+                    </span>
+                  ))}
               </div>
             </div>
           ))
