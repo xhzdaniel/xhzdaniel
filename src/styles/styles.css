@@ -1,0 +1,343 @@
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 3rem;
+  padding: 3rem 0;
+}
+
+.container-profile {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+}
+
+.container-profile .profile-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 auto;
+  min-width: 250px;
+}
+
+.container-profile .profile-image img {
+  width: 100%;
+  height: auto;
+  max-width: 20rem;
+  border-radius: 50%;
+  display: block;
+}
+
+.container-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+  padding: 2rem 0;
+  flex: 1 1 500px;
+}
+
+.container-info .location-and-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+
+.container-info .location-and-name .location {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.container-info .location-and-name h1 {
+  font-size: 2rem;
+}
+
+.container-info .location-and-name p {
+  font-size: 1rem;
+}
+
+.container-info .about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+
+.container-info .about-me h2 {
+  font-size: 1.2rem;
+}
+
+.container-info .about-me p {
+  font-size: 1rem;
+}
+
+.container-info .social-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.container-info .social-links .social-links-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.container-info .social-links .social-links-list button {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+  background-color: #333;
+  padding: 0.37rem 1rem 0.1rem 1rem;
+  border-radius: 1rem;
+  transition: background-color 0.5s ease;
+  &:hover {
+    background-color: grey;
+  }
+}
+
+.container-info .contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 1rem;
+}
+
+.container-info .contact button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  background-color: #333;
+  transition: background-color 0.5s ease;
+  &:hover {
+    background-color: grey;
+  }
+}
+
+.container-info .contact button .icon {
+  margin-top: 3px;
+}
+
+.container-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.container-projects .projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.container-projects .project {
+  display: flex;
+  flex-direction: column;
+  min-width: 16rem;
+  max-width: 20rem;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #111111;
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.container-projects .project .project-header {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.container-projects .project .project-header .header-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 0.3rem 0.5rem;
+  backdrop-filter: blur(1px);
+}
+
+.container-projects .project .project-header .header-info h3 {
+  color: white;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: max-content;
+  padding: 0rem 0.5rem;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+}
+.container-projects .project .project-header .header-info p {
+  color: white;
+  margin: 0;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  margin-left: 8px;
+}
+
+.container-projects .project .project-header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.container-projects .project img {
+  width: 100%;
+  height: auto;
+}
+
+.container-projects .project .project-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0.5rem 0.2rem 0 0.2rem;
+  gap: 0.8rem;
+}
+
+.container-projects .project .project-footer .project-sources {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.6rem;
+}
+
+.container-projects .project .project-footer .project-sources .source {
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: #333;
+  padding: 0.2rem 0.5rem 0rem 0.5rem;
+  border-radius: 1rem;
+  transition: background-color 0.5s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: white;
+  &:hover {
+    background-color: grey;
+  }
+}
+
+.container-projects .project .project-footer .visit-button {
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: #333;
+  padding: 0.4rem 0.5rem 0.1rem 0.5rem;
+  font-weight: 600;
+  border-radius: 1rem;
+  transition: background-color 0.5s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: none;
+  color: white;
+  &:hover {
+    background-color: grey;
+  }
+}
+
+.container-technologies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 64rem;
+  padding: 1rem 0;
+}
+
+.technologies-marquee {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 15%,
+    black 85%,
+    transparent
+  );
+}
+
+.technologies-marquee-content {
+  display: flex;
+  white-space: nowrap;
+  animation: scroll-left 40s linear infinite;
+  gap: 2rem;
+  animation-play-state: running;
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
+.technology {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #111111;
+  color: white;
+  border-radius: 2rem;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
