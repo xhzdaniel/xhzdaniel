@@ -15,7 +15,7 @@ export default function Projects() {
       image: Misecreto,
       description: "A platform to share secrets anonymously",
       link: "https://www.misecreto.lol",
-      sources: ["React", "NodeJs", "Express", "MongoDB"],
+      sources: ["React", "NodeJs", "ExpressJs", "MongoDB"],
     },
     {
       title: "React To Video",
