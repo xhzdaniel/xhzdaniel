@@ -6,6 +6,7 @@ import {
   FaNodeJs,
   FaServer,
   FaArrowAltCircleRight,
+  FaDiscord,
 } from "react-icons/fa";
 
 export default function Projects() {
@@ -21,8 +22,8 @@ export default function Projects() {
       title: "React To Video",
       image: ReactToVideo,
       description: "Streamer React To Video with options",
-      sources: ["React", "NodeJs"],
-      private: true,
+      link: "https://github.com/xhzdaniel/react-video",
+      sources: ["React", "NodeJs", "DiscordJs"],
     },
     {
       title: "Developing...",
@@ -36,7 +37,8 @@ export default function Projects() {
     MongoDB: <FaDatabase />,
     React: <FaReact />,
     NodeJs: <FaNodeJs />,
-    Express: <FaServer />,
+    ExpressJs: <FaServer />,
+    DiscordJs: <FaDiscord />,
   };
 
   const SourceIcon = ({ sourceName }) => {
