@@ -7,6 +7,7 @@ import {
   FaServer,
   FaArrowAltCircleRight,
   FaDiscord,
+  FaGithub,
 } from "react-icons/fa";
 
 export default function Projects() {
@@ -22,7 +23,7 @@ export default function Projects() {
       title: "React To Video",
       image: ReactToVideo,
       description: "Streamer React To Video with options",
-      link: "https://github.com/xhzdaniel/react-video",
+      github: "https://github.com/xhzdaniel/react-video",
       sources: ["React", "NodeJs", "DiscordJs"],
     },
     {
@@ -114,6 +115,16 @@ export default function Projects() {
                     >
                       Code is private
                     </span>
+                  )) ||
+                  (project.github && (
+                    <button
+                      className="visit-button"
+                      onClick={() => window.open(project.github, "_blank")}
+                      data-tooltip-id="tooltip"
+                      data-tooltip-content="View source code"
+                    >
+                      <FaGithub />
+                    </button>
                   ))}
               </div>
             </div>
