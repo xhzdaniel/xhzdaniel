@@ -3,12 +3,15 @@ export default function Technologies() {
     "HTML5",
     "CSS3",
     "JavaScript",
+    "TypeScript",
     "React",
+    "TailwindCSS",
+    "Git",
+    "Nestjs",
     "NodeJs",
     "ExpressJs",
     "MongoDB",
     "MySQL",
-    "Lua54",
   ];
 
   return (
