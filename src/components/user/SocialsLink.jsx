@@ -6,7 +6,7 @@ export default function SocialsLink() {
   };
   return (
     <div className="social-links">
-      <h2>Social Links</h2>
+      <h2>Redes Sociales</h2>
 
       <div className="social-links-list">
         <button

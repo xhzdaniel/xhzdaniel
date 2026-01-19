@@ -12,10 +12,10 @@ export default function ProfileData() {
       </div>
 
       <div className="about-me">
-        <h2>About Me</h2>
+        <h2>Acerca de mi</h2>
         <p>
-          Hello! My name is Edwin Hernández, and I am a web developer. Welcome
-          to my portfolio website.
+          Tengo 22 años de edad, soy desarrollador de software y estoy
+          aprendiendo nuevas tecnologias.
         </p>
       </div>
     </>

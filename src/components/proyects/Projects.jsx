@@ -1,6 +1,7 @@
 import Misecreto from "../../assets/misecreto.png";
 import ReactToVideo from "../../assets/reactovideo.png";
 import Rayx from "../../assets/rayx.png";
+import MyBingo from "../../assets/mybingo.png";
 import {
   FaDatabase,
   FaReact,
@@ -10,27 +11,37 @@ import {
   FaDiscord,
   FaGithub,
 } from "react-icons/fa";
+import { SiNestjs } from "react-icons/si";
 
 export default function Projects() {
   const ProjectsList = [
     {
+      title: "MyBingo",
+      image: MyBingo,
+      description: "Sistema de Bingo en linea",
+      link: "https://mybingo.cc",
+      sources: ["React", "NodeJs", "Nestjs", "MongoDB"],
+    },
+    {
       title: "MiSecreto",
       image: Misecreto,
-      description: "A platform to share secrets anonymously",
+      description:
+        "Plataforma para compartir secretos de manera anonima (Primer proyecto que use para aprender Socket)",
       link: "https://www.misecreto.lol",
       sources: ["React", "NodeJs", "ExpressJs", "MongoDB"],
     },
     {
       title: "React To Video",
       image: ReactToVideo,
-      description: "Streamer React To Video with options",
+      description:
+        "Web simple con botones para reaccionar y tomar acciones sobre videos enviados por su comunidad en Discord",
       github: "https://github.com/xhzdaniel/react-video",
       sources: ["React", "NodeJs", "DiscordJs"],
     },
     {
       title: "Rayx Cheats",
       image: Rayx,
-      description: "A cheat for different games with multiple features",
+      description: "Tienda en linea para ofrecer servicios a sus clientes",
       link: "https://rayxcheats.com",
       sources: ["React", "NodeJs", "ExpressJs", "MongoDB"],
     },
@@ -42,6 +53,7 @@ export default function Projects() {
     NodeJs: <FaNodeJs />,
     ExpressJs: <FaServer />,
     DiscordJs: <FaDiscord />,
+    Nestjs: <SiNestjs />,
   };
 
   const SourceIcon = ({ sourceName }) => {
@@ -52,8 +64,8 @@ export default function Projects() {
   return (
     <>
       <div style={{ textAlign: "center" }}>
-        <h2>Projects</h2>
-        <p>Check out my projects and learn more about my work.</p>
+        <h2>Proyectos</h2>
+        <p>Conoce mis proyectos de aprendizaje y trabajos realizados</p>
       </div>
       <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
         <div className="projects">
