@@ -18,7 +18,8 @@ export default function Projects() {
     {
       title: "MyBingo",
       image: MyBingo,
-      description: "Sistema de Bingo en linea",
+      description:
+        "Sistema de Bingo en linea con panel administrativo para el control de usuarios, cartones y juego en vivo.",
       link: "https://mybingo.cc",
       sources: ["React", "NodeJs", "Nestjs", "MongoDB"],
     },
@@ -104,50 +105,52 @@ export default function Projects() {
                         className="source soon"
                         style={{ padding: "0.15rem 0.5rem" }}
                         data-tooltip-id="tooltip"
-                        data-tooltip-content="In development"
+                        data-tooltip-content="En desarrollo"
                       >
-                        Cooming Soon
+                        Muy pronto
                       </span>
                     )}
                   </div>
-                  {(project.link && (
-                    <button
-                      className="visit-button"
-                      onClick={() => window.open(project.link, "_blank")}
-                      data-tooltip-id="tooltip"
-                      data-tooltip-content="Visit Project"
-                    >
-                      <FaArrowAltCircleRight />
-                    </button>
-                  )) ||
-                    (project.private && (
-                      <span
-                        className="private"
-                        data-tooltip-id="tooltip"
-                        data-tooltip-content="Visit not available"
-                        disabled
-                        style={{
-                          padding: "0.2rem 0.5rem",
-                        }}
-                      >
-                        Code is private
-                      </span>
-                    )) ||
-                    (project.github && (
+                  <div className="project-sources">
+                    {(project.link && (
                       <button
                         className="visit-button"
-                        onClick={() => window.open(project.github, "_blank")}
+                        onClick={() => window.open(project.link, "_blank")}
                         data-tooltip-id="tooltip"
-                        data-tooltip-content="View source code"
+                        data-tooltip-content="Visitar proyecto"
                       >
-                        <FaGithub />
+                        <FaArrowAltCircleRight />
                       </button>
-                    ))}
+                    )) ||
+                      (project.private && (
+                        <span
+                          className="private"
+                          data-tooltip-id="tooltip"
+                          data-tooltip-content="Visita no disponible"
+                          disabled
+                          style={{
+                            padding: "0.2rem 0.5rem",
+                          }}
+                        >
+                          Código privado
+                        </span>
+                      )) ||
+                      (project.github && (
+                        <button
+                          className="visit-button"
+                          onClick={() => window.open(project.github, "_blank")}
+                          data-tooltip-id="tooltip"
+                          data-tooltip-content="Ver código"
+                        >
+                          <FaGithub />
+                        </button>
+                      ))}
+                  </div>
                 </div>
               </div>
             ))
           ) : (
-            <p>No projects available</p>
+            <p>No hay proyectos disponibles</p>
           )}
         </div>
       </div>

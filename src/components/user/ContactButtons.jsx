@@ -13,7 +13,7 @@ export default function CotnactButtons() {
         className="email-button"
         onClick={handleEmailClick}
         data-tooltip-id="tooltip"
-        data-tooltip-content="Send email"
+        data-tooltip-content="Enviar un correo"
       >
         <span className="icon">
           <FaEnvelope />
@@ -25,12 +25,12 @@ export default function CotnactButtons() {
         className="support-button"
         onClick={handleSupportClick}
         data-tooltip-id="tooltip"
-        data-tooltip-content="Send tip"
+        data-tooltip-content="Enviarme una donacion"
       >
         <span className="icon">
           <FaDollarSign />
         </span>
-        <span>Support</span>
+        <span>Donar</span>
       </button>
     </div>
   );
